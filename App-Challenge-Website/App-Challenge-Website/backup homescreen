@@ -1,0 +1,48 @@
+
+var address;
+var userAddress;
+function firstButtonHover(){
+	document.getElementById("addressSubmit").style.display = 'inline';
+	document.getElementById("addressBox").style.display = 'inline';
+	document.getElementById("d1").innerHTML = "Type in your address and click submit to find your voting location" + '<br>'+
+	'<br>' + "*note: the current rendition only contains voting locations in Plantation, FL ";	
+	// when the mouse hovers over the top button, the address box appears.
+}
+function firstButtonLeave(){
+	document.getElementById("addressSubmit").style.display = 'none';
+	document.getElementById("addressBox").style.display = 'none';
+	addressSubmit.style.display = "none";
+	document.getElementById("d1").innerHTML = "";	
+	// when the mouse leaves the top button, the address box disappears.
+}
+function firstButton(){
+	document.getElementById("buttons").style.display = "none;
+	document.getElementById("secondWindow").style.display = "inline-block";
+	document.getElementById("votingLocation").style.display = "inline";
+	document.getElementById("mainBottom").style.display = "none";
+	document.getElementById("secondBottom").style.display = "inline";
+	document.getElementById("pageInfo").innerHTML = "";
+	initMap();
+}
+function secondButtonHover(){
+	document.getElementById("d2").innerHTML = "Click on each button to learn about the upcoming elections";	
+}
+function secondButtonLeave(){
+	document.getElementById("d2").innerHTML = "";	
+}
+
+function button2(){
+	document.getElementById("buttons").style.display = "none";
+	document.getElementById("secondWindow").style.display = "inline-block";
+	document.getElementById("candidates").style.display = "inline-block";
+	document.getElementById("mainBottom").style.display = "none";
+}
+function buttonsBack() {
+	document.getElementById("buttons").style.display = "inline";
+	document.getElementById("secondWindow").style.display = "none";
+	document.getElementById("candidates").style.display = "none";
+	document.getElementById("votingLocation").style.display = "none";
+	document.getElementById("mainBottom").style.display = "inline";
+	document.getElementById("secondBottom").style.display = "none";
+	document.getElementById("pageInfo").innerHTML = "";
+}

@@ -1,0 +1,259 @@
+.logo{
+	height: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* logo */
+}
+#home {
+	background-color: #4d94ff;
+	font-family: ubuntu;
+	font-weight: bold;
+	/* applies to entire page */
+}
+#secondWindow {
+	background-color: #ff6666; 
+	height: 400px;
+	width: 100%;
+	display: none;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	color: black; /* text color */
+	text-align: left; /* aligns the text*/
+	font-size: 16px;
+	border-radius: 10px;
+	/* second window appears when one of the two main buttons are clicked */
+}
+#issues {
+	text-align: center;
+	display: none;
+    z-index: 1;
+}
+#test{
+	position: sticky;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+	height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  overflow: auto;
+  border-style: solid;
+  background-color: #bfbfbf;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pageInfo {
+text-align: center;
+font-size: 20px;
+}
+#candidates{
+	display: none;
+}
+
+#votingLocation {
+	display: none;
+}
+#right-panel {
+	line-height: 15px;
+	float: right;
+	width: 40%;
+	padding-right: 10px;
+	padding-top: 10px;
+	text-align: right;
+}
+#output {
+	font-size: 12px;
+	background-color: white;
+	width: 70%;
+	display: inline-block;
+	overflow-y: scroll;
+	height: 380px;
+	border-radius: 4px;
+	text-align: left;
+}
+#votingPlace{
+	float: left;
+	display: inline-block;
+	width: 120px;
+}
+#map {
+	margin: 20px;
+	padding-top: 20px;
+	height: 340px;
+	width: 50%;
+	display: inline-block;
+	border-radius: 10px;
+	float: left;
+}
+#leaveWindow {
+	margin: 5px;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	/* hides the second window, returns the two buttons */
+}
+
+.button {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color:  #ff6666; 
+	color: black; /* text color */
+	text-align: center; /* aligns the text*/
+	font-size: 24px;
+	height: 200px;
+	width: 40%;
+	border-radius: 10px;
+    transition: 0.3s;
+	display: inline-block;
+	vertical-align: middle;
+	
+
+	/* defines the two main buttons */
+}
+.button:hover {
+	height: 300px;
+	opacity: 1;
+	background-color: #ff3333;
+	width: 50%;
+	/* defines activity when you hover over the two button */
+}
+#button1 {
+	float: left;
+}
+#b1Picture {
+	width: 10%;
+	display: none;
+}
+#addressBox {
+	display: none;
+	width: 60%;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	outline: none;
+	/* address box for first button */
+}
+#addressSubmit {
+	display: none;
+	background-color: #555555;
+	color: white;
+	/* address submit for first button */
+}
+#button2 {
+	float: right;
+}
+
+#b2Picture {
+	width: 10%;
+	display: none;
+}
+/* COPIED */
+#dropdown1 {
+	float:left;
+	margin-left: 50px;
+	display: none;
+}
+#dropdown2 {
+	float:right;
+	margin-right: 50px;
+	display: none;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.description{
+	font-size: 12px;
+	/* defines the descriptions for each button */
+}
+
+#bottom {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+	text-align: center;
+}
+
+#bottomInformation {
+	text-align: center;
+	font-size: 10px;
+	display: inline-block;
+}

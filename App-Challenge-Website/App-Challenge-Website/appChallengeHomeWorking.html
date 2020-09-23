@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="appChallenge.css">
+	<img class = "logo" id="mid" src="logo1.png">
+	<script type="text/javascript" src="homeScreen.js"> </script>
+
+</head>
+	<body id = "home">
+		<div id="secondWindow">
+			<button id="leaveWindow" onClick="buttonsBack()">X</button>
+			<div id="candidates">
+					<input type = "button" value = "Presidential Candidates" > 
+					<input type = "button" value = "Prospective Senators"> 
+					<input type = "button" value = "Prospective House Members"> 
+			</div>
+			<div id="votingLocation">
+				<div id="right-panel"> 
+					<div id="output"></div>
+					<div id="votingPlace"> </div>
+				</div>
+				<div id="map"></div>	
+				<script type="text/javascript" src="findLocation.js"> </script>
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYwwgrIWygV0oNRG7WWBjwiC1Wl0BfslQ"> </script>
+			</div>
+		</div>
+		<div id="pageInfo"></div>
+
+		<div id="buttons">
+			<br></br><br>
+			<div class="button" id="button1" onmouseover="firstButtonHover()" onmouseleave="firstButtonLeave()">
+					<br><br>
+					<img id = "b1Picture" src = "map.png">
+					<p> Find Your Voting Location </p>
+					<p class = "description" id = "d1"> </p>
+					<input id="addressBox" type="textbox">
+					<input id="addressSubmit" type="button" value="Submit" onclick="firstButton()">								
+			</div>
+			
+			
+			<div class="button" id="button2" onmouseover="secondButtonHover()" onmouseleave="secondButtonLeave()">
+					<br><br>
+					<img id = "b2Picture" src = "person.jpg">
+					<p> Learn about the candidates </p>
+					<p class = "description" id="d2"> </p>
+					<div class="b2Dropdown">
+						<button class = "dropdowns" id="dropdown1">Search by Issue</button>
+						<div class="dropup-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+						
+						
+						
+						<button class = "dropdowns" id="dropdown2">Search by Department</button>
+					</div>
+			</div>
+		</div>
+		<div id="bottom">	
+			<p id="bottomInformation">
+				Created by: Ari Modlin, Jason Firestein, and Joseph Rhein
+				<br>
+				David Posnack Jewish Day School: Florida 23rd District
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="appChallenge.css">
+	<img class = "logo" id="mid" src="logo.png">
+	<script type="text/javascript" src="homeScreen.js"> </script>
+
+</head>
+	<body id = "home">
+		<div id="secondWindow">
+		<button id="leaveWindow" onClick="buttonsBack()">X</button>
+
+			<div id="issues">
+
+				<div class="split left">
+				  <div class="centered">
+
+					<p id="democrat"> 
+					</p>
+				  </div>
+				</div>
+
+				<div class="split right">
+				  <div class="centered">
+					<p id="republican"> </p>
+				 </div>
+				</div>
+			</div>
+			<div id="votingLocation">
+				<div id="right-panel"> 
+					<div id="output"></div>
+					<div id="votingPlace"> </div>
+				</div>
+				<div id="map"></div>	
+				<script type="text/javascript" src="findLocation.js"> </script>
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYwwgrIWygV0oNRG7WWBjwiC1Wl0BfslQ"> </script>
+			</div>
+		</div>
+		<br></br>
+		<div id="pageInfo"></div>
+
+		<div id="buttons">
+			<br></br><br>
+			<div class="button" id="button1" onmouseover="firstButtonHover()" onmouseleave="firstButtonLeave()">
+					<br><br>
+					<img id = "b1Picture" src = "map.png">
+					<p> Find Your Voting Location </p>
+					<p class = "description" id = "d1"> </p>
+					<input id="addressBox" type="textbox">
+					<input id="addressSubmit" type="button" value="Submit" onclick="firstButton()">								
+			</div>
+			
+			
+			<div class="button" id="button2" onmouseover="secondButtonHover()" onmouseleave="secondButtonLeave()">
+				<br>
+				<img id = "b2Picture" src ="person.jpg">
+				<br>
+				<p> Get ready for the upcoming elections! </p>
+				<p class = "description" id="d2"></p>
+				<div class="dropdown" id="dropdown1">
+					<button class="dropbtn">Search by Issue</button>
+					<div class="dropdown-content" style="left:0;">
+						<a onClick="immigration()">Immigration</a>
+						<a onClick="trade()">Trade</a>
+						<a href="#">Abortion</a>
+						<a onClick="economy()">Economy</a>
+						<a href="#">Health Care</a>
+						<a href="#">Gun Control</a>
+
+					</div>
+				</div>
+				<div class="dropdown" id="dropdown2">
+				  <button class="dropbtn">Search by Office</button>
+				  <div class="dropdown-content">
+				  <a href="#">President Candidates</a>
+				  <a onClick = "house()">House of Representative Candidates</a>
+				  <a href="#">Sentae Candidates</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div id="bottom">	
+			<p id="bottomInformation">
+				Created by: Ari Modlin, Jason Firestein, and Joseph Rhein
+				<br>
+				David Posnack Jewish Day School: Florida 23rd District
+
+			</p>
+		</div>
+	</body>
+</html>

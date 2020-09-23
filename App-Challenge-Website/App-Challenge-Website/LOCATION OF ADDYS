@@ -1,0 +1,20 @@
+// Plantation Voting Locations:
+var n001 = {lat: 26.130810, lng: -80.203240}; // Plantation Ford
+var n002 = {lat: 26.124597, lng: -80.210728}; // Jim Ward CC
+var n004 = {lat: 26.144636, lng: -80.307279}; // Volunteer Park CC
+var n006 = {lat: 26.103344, lng: -80.220230}; // South Plantation HS
+var n007 = {lat: 26.134974, lng: -80.241714}; // Plantation Presbytarian Church
+var n008 = {lat: 26.124119, lng: -80.225311}; // Deike Auditorium
+var n010 = {lat: 26.103400, lng: -80.234761}; // Tropical Elementary School
+var n011 = {lat: 26.119802, lng: -80.249533}; // El Dorado Estates CC
+var n012 = {lat: 26.122336, lng: -80.248546}; // Lakes of Newport Clubhouse
+var n013 = {lat: 26.145304, lng: -80.240873}; // Plantation HS 
+var n015 = {lat: 26.139561, lng: -80.262183}; // Lauderdale West RF
+var n017 = {lat: 26.104890, lng: -80.256983}; // Temple Kol-Ami
+var n018 = {lat: 26.121856, lng: -80.268590}; // Covenant Retirement Village
+var n020 = {lat: 26.109510, lng: -80.222501}; // Plantation Park Elementary
+var n021 = {lat: 26.123462, lng: -80.270555}; // Plantation Central Park Rec. Bldg.
+var n023 = {lat: 26.131295, lng: -80.288532}; // Central Park Elementary School
+var n025 = {lat: 26.138493, lng: -80.294159}; // Bridgewater Homeowners Association Clubhouse
+var n027 = {lat: 26.124043, lng: -80.253761}; // St. Gregory's Catholic Church
+var n028 = {lat: 26.160034, lng: -80.304161}; // Plantation Baptist Church
